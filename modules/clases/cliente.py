@@ -11,4 +11,4 @@ class Cliente:
         self.__vehiculos_comprados.append(vehiculo)
 
     def mostrar_info(self):
-        return f"{self.__nombre} {self.__apellido} - {self.__dni}"
+        return f"{self.__nombre} {self.__apellido} - {self.__dni} ({len(self.__vehiculos_comprados)} vehículo(s) comprados)"

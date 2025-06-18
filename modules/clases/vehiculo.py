@@ -27,7 +27,9 @@ class Vehiculo(ABC):
         return not self.__vendido
 
     def mostrar_informacion(self):
-        return f"{self.__marca} {self.__modelo} ({self.__año}) - ${self.__precio}"
+        estado = "Disponible" if not self.__vendido else "Vendido"
+        return (f"{self.__marca} {self.__modelo} ({self.__año}) - ${self.__precio:.2f} | "
+                f"VIN: {self.__vin} | Estado: {estado}")
 
     @abstractmethod
     def calcular_seguro(self):

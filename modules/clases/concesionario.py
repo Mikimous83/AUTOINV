@@ -21,8 +21,10 @@ class Concesionario:
         return False
 
     def generar_reportes(self):
+        print("\n--- REPORTE DE VEHÍCULOS ---")
         for v in self.__vehiculos:
             print(v.mostrar_informacion())
-        print("Clientes:")
+
+        print("\n--- REPORTE DE CLIENTES ---")
         for c in self.__clientes:
             print(c.mostrar_info())
