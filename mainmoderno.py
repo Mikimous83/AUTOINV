@@ -162,9 +162,12 @@ class VehiculoTab(QWidget):
         self.puertas_spin.setValue(4)
         self.puertas_spin.setMinimumHeight(40)
 
+
         self.combustible_combo = QComboBox()
         self.combustible_combo.addItems(["Gasolina", "Diésel", "Híbrido", "Eléctrico", "GLP"])
+        self.combustible_combo.setStyleSheet("color: #2c3e50; background-color: white;")
         self.combustible_combo.setMinimumHeight(40)
+
 
         self.automatico_check = QCheckBox("Transmisión automática")
         self.automatico_check.setStyleSheet("QCheckBox { font-size: 11px; }")

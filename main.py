@@ -1,8 +1,3 @@
-from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QLabel, QVBoxLayout,
-    QLineEdit, QPushButton, QMessageBox, QFormLayout, QTabWidget, QTableWidget, QTableWidgetItem)
-from PyQt6.QtCore import Qt
-import sys
-
 from modules.clases.auto import Auto
 from modules.clases.cliente import Cliente
 from modules.clases.concesionario import Concesionario
