@@ -9,6 +9,19 @@ class Vehiculo(ABC):
         self.__vin = vin
         self.__vendido = False
 
+    # Getters
+    @property
+    def marca(self):
+        return self.__marca
+
+    @property
+    def modelo(self):
+        return self.__modelo
+
+    @property
+    def año(self):
+        return self.__año
+
     @property
     def precio(self):
         return self.__precio
@@ -19,6 +32,10 @@ class Vehiculo(ABC):
             self.__precio = nuevo_precio
         else:
             raise ValueError("El precio debe ser mayor a 0")
+
+    @property
+    def vin(self):
+        return self.__vin
 
     def marcar_como_vendido(self):
         self.__vendido = True
